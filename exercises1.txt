@@ -1,0 +1,56 @@
+(!--NOMOR 1--)
+STORE 'massa benda' with 600
+STORE 'percepatan benda' with 2
+STORE 'resultan gaya" with 0
+CALCULATE 'massa benda' times 'percepatan benda'
+SET 'resultan gaya' value with calculation result
+DISPLAY 'resultan gaya'
+
+(!--NOMOR 2--)
+STORE 'tahun' with any value number
+IF 'tahun' mod '4' equals 0 and 'tahun' mod '100' not equals 0 THEN
+  DISPLAY 'tahun kabisat'
+ELSE IF 'tahun' mod '4' equals 0 and 'tahun' mod '100' equals 0 and 'tahun' mod '400' equals 0 THEN
+  DISPLAY 'tahun kabisat'
+ELSE
+  DISPLAY 'bukan tahun kabisat'
+ENDIF
+
+1. Simpan variabel 'tahun' dengan angka berapapun.
+2. Jika 'tahun' modulus 4 sama dengan 0 dan jika 'tahun' modulus 100 tidak sama dengan 0, maka tampilkan 'tahun kabisat'.
+3. Jika 'tahun' modulus 4 sama dengan 0 dan jika 'tahun' modulus 100 sama dengan 0 dan jika 'tahun' modulus 400 sama dengan 0, maka tampilkan 'tahun kabisat'.
+4. Selain daripada kondisi diatas, tampilkan 'bukan tahun kabisat'.
+
+(!--NOMOR 3--)
+STORE 'hitungBaju' with 0
+WHILE 'hitungBaju' less than 20
+  ADD 'hitungBaju' by 1
+  IF 'hitungBaju' less than 20 THEN
+    DISPLAY 'tambahkan baju!'
+  ELSE IF 'hitungBaju' equals 20 THEN
+    DISPLAY 'nyalakan mesin!'
+  END IF
+END WHILE
+
+1. Simpan variabel 'hitungBaju' dengan nilai 0.
+2. Buat perulangan ketika 'hitungBaju' kurang dari 20.
+3. Tambahkan 'hitungBaju' dengan nilai 1 di dalam perulangan.
+4. Jika 'hitungBaju' kurang dari 20, maka tampilkan 'tambahkan baju!'.
+5. Jika 'hitungBaju' sama dengan 20, maka tampilkan 'nyalakan mesin!'.
+
+(!--NOMOR 4--)
+STORE 'siswa' to 0
+WHILE 'siswa' less than 40
+  ADD 'siswa' by 1
+  IF 'siswa' mod 7 equals 0 THEN
+    DISPLAY 'hukum'
+  ELSE
+    DISPLAY 'puji'
+  END IF
+END WHILE
+
+1. Simpan variabel 'siswa' dengan nilai 0.
+2. Buat perulangan ketika 'siswa' kurang dari 40.
+3. Tambahkan 'siswa' dengan nilai 1 di dalam perulangan.
+4. Jika 'siswa' modulus 7 sama dengan 0, maka tampilkan 'hukum'.
+5. Selain daripada kondisi diatas, tampilkan 'puji'.
