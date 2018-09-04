@@ -1,7 +1,7 @@
 var nama = 'Sendy'
 var peran = 'tabib'
 
-if (nama !== '' || !nama !== null && nama !== 0) {
+if (nama !== '' || nama !== null && nama !== 0) {
   if (peran === '') {
     console.log('Halo ' + nama + ', pilih peranmu untuk memulai game!')
   }
